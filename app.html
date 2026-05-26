@@ -90,24 +90,12 @@
                 <div class="row">
                     <div class="col">
                         <p>Seleccione su género:</p>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="radioGenero" id="radioGenero1" value="1">
-                            <label class="form-check-label" for="radioDefault1">
-                                Masculino
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="radioGenero" id="radioGenero2" value="2">
-                            <label class="form-check-label" for="radioGenero2">
-                                Femenino
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="radioGenero" id="radioGenero3" value="3">
-                            <label class="form-check-label" for="radioGenero3">
-                                Prefiero NO decir
-                            </label>
-                        </div>
+                        <select class="form-select" aria-label="Seleccione su género">
+                            <option selected>Seleccione su género</option>
+                            <option value="1">Masculino</option>
+                            <option value="2">Femenino</option>
+                            <option value="3">Prefiero NO decir</option>
+                        </select>
                     </div>
                     <div class="col">
                         <label for="inputNacimiento" class="form-label">Fecha de Nacimiento:</label>
