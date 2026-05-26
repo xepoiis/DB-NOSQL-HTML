@@ -12,7 +12,7 @@
         crossorigin="anonymous"></script>
     <script src="./js/formulario.js"></script>
 
-    <title>Formulario de Registro MONKENOSQL</title>
+    <title>MONKENOSQL</title>
 </head>
 
 <body>
@@ -34,7 +34,7 @@
     <div class="container">
         <br>
         <form>
-            <p class="h1">MONKENOSQL</p>
+            <p class="h1">Formulario de Registro</p>
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -75,7 +75,7 @@
                     </div>
                     <div class="col">
                         <label for="inputNacimiento" class="form-label">Fecha de Nacimiento:</label>
-                        <input type="date" class="form-control" name="fechaNacimiento" id="inputNacimiento">
+                        <input type="date" class="form-control" name="fechaNacimiento" id="input_nacimiento">
                     </div>
                 </div>
                 <br>
@@ -83,14 +83,14 @@
                 <div class="row">
                     <div class="col">
                         <label for="inputFoto" class="form-label">Foto Personal:</label>
-                        <input type="file" class="form-control" name="" id="inputFoto">
+                        <input type="file" class="form-control" name="" id="input_foto">
                     </div>
                 </div>
                 <br>
                 <div class="row">
                     <div class="col d-flex justify-content-end">
                         <button type="button" class="btn btn-secondary me-2">Cancelar</button>
-                        <button type="button" class="btn btn-primary">Aceptar</button>
+                        <button type="button" class="btn btn-primary" onclick="validarFormulario()">Aceptar</button>
                     </div>
                 </div>
             </div>
