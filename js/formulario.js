@@ -22,7 +22,7 @@ function validarFormulario() {
         datoCorreo.classList.remove('is-invalid');
         datoCorreo.classList.add('is-valid');}
 
-    if(datoContrasena.value == ''){
+    if(datoContrasena.value == '' || !validarcontrasenaSegura(datoContrasena.value)){
         datoContrasena.classList.add('is-invalid');
     }else{
         datoContrasena.classList.remove('is-invalid');
@@ -48,10 +48,11 @@ function validarFormulario() {
 }
 
 function validarCorreo(email){
-    const expression = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
-    return expression.test(email);
+    const expresion = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+    return expresion.test(email);
 }
 
-function validarcontrasenaSegura(){
-    
+function validarcontrasenaSegura(password){
+    const expresionregular = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&#.$($)$-$_])[A-Za-z\d$@$!%*?&#.$($)$-$_]{8,15}$/;
+    return expresionregular.test(password);
 }
