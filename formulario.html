@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/monke.ico">
-    <link rel="stylesheet" href="./css/cyborg.css">
+    <link rel="stylesheet" href="./css/slate.css">
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
@@ -41,11 +41,13 @@
                         <label for="input_nombre" class="form-label">Nombre Usuario:</label>
                         <input class="form-control" type="text" name="nombre" id="input_nombre"
                             placeholder="Ingrese su nombre">
+                        <div class="invalid-feedback">El nombre de usuario es obligatorio.</div>
                     </div>
                     <div class="col">
                         <label for="input_correo" class="form-label">Correo Electrónico:</label>
                         <input class="form-control" type="email" name="nombre" id="input_correo"
                             placeholder="Ingrese su nombre">
+                        <div class="invalid-feedback">El correo electrónico es obligatorio.</div>
                     </div>
                 </div>
                 <br>
@@ -54,11 +56,13 @@
                     <div class="col">
                         <label for="input_contrasena" class="form-label">Contraseña:</label>
                         <input type="password" class="form-control" name="input_contrasena" id="input_contrasena">
+                        <div class="invalid-feedback">La contraseña es obligatoria.</div>
                     </div>
                     <div class="col">
                         <label for="input_repetir_contrasena" class="form-label">Repetir Contraseña:</label>
                         <input type="password" class="form-control" name="input_repetir_contrasena"
                             id="input_rep_contrasena">
+                        <div class="invalid-feedback">Por favor, repita su contraseña.</div>
                     </div>
                 </div>
                 <br>
@@ -66,16 +70,18 @@
                 <div class="row">
                     <div class="col">
                         <p>Seleccione su género:</p>
-                        <select class="form-select" aria-label="Seleccione su género">
-                            <option selected>Seleccione su género</option>
+                        <select class="form-select" aria-label="Seleccione su género" id="selectGenero">
+                            <option selected value="">Seleccione su género</option>
                             <option value="1">Masculino</option>
                             <option value="2">Femenino</option>
                             <option value="3">Prefiero NO decir</option>
                         </select>
+                        <div class="invalid-feedback">El género es obligatorio.</div>   
                     </div>
                     <div class="col">
                         <label for="inputNacimiento" class="form-label">Fecha de Nacimiento:</label>
                         <input type="date" class="form-control" name="fechaNacimiento" id="input_nacimiento">
+                        <div class="invalid-feedback">La fecha de nacimiento es obligatoria.</div>
                     </div>
                 </div>
                 <br>
